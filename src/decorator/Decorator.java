@@ -23,15 +23,16 @@ public class Decorator {
         Robot robotH2 = new Heavy();
         Robot robotL = new Light();
         
-        
         robotL = new Grapple(robotL);      
         robotH = new Grapple(robotH);
         
         robotL = new AdditionalSprings(robotL);      
         robotH = new AdditionalSprings(robotH);
-        double b = robotH.cost();
+        
         System.out.println(robotH.robotData() + " " + robotH.cost());
         System.out.println("\n" + robotL.robotData() + " " + robotL.cost());
+        
+        
     }
     
 }

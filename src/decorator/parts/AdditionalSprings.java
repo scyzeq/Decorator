@@ -25,14 +25,15 @@ public class AdditionalSprings extends PartsData
     
     public String robotData()
     {
-        return robot.robotData() + " additional springs";
+        return robot.robotData() + ", additional springs";
     }
     
     public double cost()
     {
-        if(robot instanceof decorator.Light)
+        String a = robot.robotData();
+        if(robot.robotData().contains("Light frame"))
             return robot.cost() + 15;
-        else if(robot instanceof decorator.Heavy)
+        else if(robot.robotData().contains("Heavy frame"))
             return robot.cost() + 30;
         return 0;
     }

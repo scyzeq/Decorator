@@ -23,7 +23,7 @@ public class Blade extends PartsData{
     
     public String robotData()
     {
-        return robot.robotData() + " Blade";
+        return robot.robotData() + ", Blade";
     }
     
     public double cost()

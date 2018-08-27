@@ -23,7 +23,7 @@ public class Grapple extends PartsData{
     
     public String robotData()
     {
-        return robot.robotData() + " grapple";
+        return robot.robotData() + ". grapple";
     }
     
     public double cost()
